@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitnest - Register</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">FIT<span>NEST.</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="media.html">Media & Info</a>
+      <a href="register.html">Register</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="register.html" class="nav-button">JOIN NOW</a>
+  </header>
+
+  <main>
+    <form action="#" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+      <h2>Member Registration Form</h2>
+
+      <label for="fullname">Full Name *</label>
+      <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="30" placeholder="e.g. Ayesha Khan">
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" value="fitnest_member" readonly>
+
+      <label for="promo">Promo Code</label>
+      <input type="text" id="promo" name="promo" value="FIT2026" disabled>
+
+      <label for="pass">Password *</label>
+      <input type="password" id="pass" name="password" required minlength="6">
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required placeholder="you@email.com">
+
+      <label for="dob">Date of Birth *</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="age">Age *</label>
+      <input type="number" id="age" name="age" required min="12" max="80">
+
+      <label for="goal">Your Goal</label>
+      <textarea id="goal" name="goal" rows="4" placeholder="Weight loss, muscle gain..."></textarea>
+
+      <label><input type="checkbox" name="terms" required> I agree to gym rules *</label>
+
+      <button type="submit">Register Now</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+
+  <footer><p>© 2026 Fitnest Fitness Club</p></footer>
+
+  <script>
+    function validateForm(){
+      let name = document.getElementById("fullname").value;
+      let email = document.getElementById("email").value;
+      if(name==""){ alert("Full Name likho"); return false; }
+      if(email=="" || !email.includes("@")){ alert("Sahi Email likho"); return false; }
+      alert("Registration Successful!");
+      return true;
+    }
+  </script>
+
+</body>
+</html>
