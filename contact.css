@@ -1,0 +1,10 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#e0c3fc 0%,#8ec5fc 100%);min-height:100vh}
+nav{background:#0f0f0f;padding:18px;display:flex;gap:25px;justify-content:center;border-radius:50px;margin:15px 20px;}
+nav a{color:#fff;text-decoration:none;font-weight:600} nav a:hover{color:#8e44ad}
+h1{text-align:center;margin:25px 0;color:#111}
+form{max-width:420px;margin:20px auto;background:#fff;padding:30px;border-radius:20px;box-shadow:0 15px 35px rgba(0,0,0,0.12)}
+input,textarea{width:100%;padding:12px;margin:10px 0;border:1.5px solid #ddd;border-radius:10px;outline:none;transition:0.3s}
+input:focus,textarea:focus{border-color:#8e44ad;box-shadow:0 0 0 3px rgba(142,68,173,0.1)}
+button{width:100%;padding:13px;background:#111;color:#fff;border:none;border-radius:25px;font-weight:700;cursor:pointer;transition:0.3s;margin-top:10px}
+button:hover{background:#8e44ad;transform:translateY(-2px)}
