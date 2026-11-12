@@ -1,0 +1,152 @@
+/* home.css - Home Page */
+/* Element selector */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* Class selector - Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 15px 40px;
+  border-bottom: 4px solid #e63946;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #e63946;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.navbar nav a:hover {
+  color: #ffcc00;
+}
+
+.nav-button {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #e63946;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 50px;
+  gap: 30px;
+}
+
+.tagline {
+  color: #e63946;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.hero-text h1 span {
+  color: #e63946;
+}
+
+.description {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.main-button {
+  display: inline-block;
+  background-color: #111;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.main-button:hover {
+  background-color: #e63946;
+}
+
+.small-text {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #888;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  border: 3px solid #111;
+}
+
+.image-label {
+  background-color: #e63946;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Features */
+.features {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+
+.feature {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  border-top: 5px solid #e63946;
+  flex: 1;
+}
+
+.feature h2 {
+  color: #e63946;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #111;
+  color: white;
+  padding: 18px;
+}
